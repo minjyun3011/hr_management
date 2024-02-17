@@ -9,6 +9,7 @@
             <th>名</th>
             <th>メール</th>
             <th>部署</th>
+            <th>部活</th>
         </tr>
     </head>
 
@@ -20,6 +21,12 @@
             <td>{{ employee.first_name }}</td>
             <td>{{ employee.email }}</td>
             <td>{{ employee.department }}</td>
+            <td>
+                {% for club in employee.club.all %}
+                {{ club.name }}{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            </td>
+
         </tr>
         {% endfor %}
     </body>

@@ -1,6 +1,7 @@
-/* テーブルの基本スタイル */
+/* テーブル全体のスタイルを小さくする */
 .table {
-    width: 100%; /* テーブルの幅を100%に設定 */
+    width: 80%; /* テーブルの幅を全体の80%に設定 */
+    font-size: 0.8rem; /* テーブル内のフォントサイズを小さく設定 */
     border-collapse: collapse; /* セルの境界線を1本にまとめる */
     margin-bottom: 1rem; /* 下部に余白を設定 */
     background-color: white; /* テーブルの背景色を白に設定 */
@@ -22,7 +23,7 @@
 
 /* テーブルセルのスタイル */
 .table td, .table th {
-    padding: .75rem; /* セルの内側の余白を設定 */
+    padding: 0.5rem; /* セルの内側の余白を小さく設定 */
     border: 1px solid #dee2e6; /* セルの境界線の色と太さを設定 */
     text-align: left; /* テキストを左揃えに設定 */
 }
