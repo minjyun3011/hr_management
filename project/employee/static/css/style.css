@@ -32,3 +32,11 @@
 .mt-8 {
     margin-top: 2rem; /* 例: 2remが望ましいマージンの大きさに相当する場合 */
 }
+
+form {
+    display: flex;
+    align-items: center; /* 要素を垂直方向の中心に揃える */
+}
+form > * {
+    margin-right: 10px; /* 要素間の余白 */
+}
