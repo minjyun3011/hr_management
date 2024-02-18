@@ -7,8 +7,7 @@
     </form>
 </div>
 <table class="table table-bordered mt-8">
-
-    <head>
+    <thead>
         <tr>
             <th>ID</th>
             <th>姓</th>
@@ -17,9 +16,8 @@
             <th>部署</th>
             <th>部活</th>
         </tr>
-    </head>
-
-    <body>
+    </thead>
+    <tbody>
         {% for employee in employee_list %}
         <tr>
             <td>{{ employee.pk }}</td>
@@ -32,9 +30,9 @@
                 {{ club.name }}{% if not forloop.last %},{% endif %}
                 {% endfor %}
             </td>
-
         </tr>
         {% endfor %}
-    </body>
+    </tbody>
 </table>
+
 {% endblock %}
