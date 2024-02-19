@@ -122,3 +122,42 @@ nav {
     margin-left: 1px;
     /* 左側のマージンを設定 */
 }
+
+.pagination {
+    list-style: none;
+    /* 箇条書きの点をなくす */
+    display: flex;
+    /* リストアイテムを横並びにする */
+    padding: 0;
+}
+
+.page-item {
+    margin: 5px;
+    /* リストアイテム間の余白 */
+}
+
+.page-link {
+    display: flex;
+    /* リンク内の要素（テキストやアイコン）を中央揃えにする */
+    justify-content: center;
+    /* 水平方向の中央揃え */
+    align-items: center;
+    /* 垂直方向の中央揃え */
+    width: 30px;
+    /* 正方形のサイズ（幅） */
+    height: 30px;
+    /* 正方形のサイズ（高さ） */
+    border: 1px solid #007bff;
+    /* 枠線 */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    color: #007bff;
+    /* リンクのテキスト色 */
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    /* 現在のページの背景色 */
+    color: white;
+    /* 現在のページのテキスト色 */
+}
